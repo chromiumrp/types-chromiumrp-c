@@ -102,6 +102,7 @@ interface GuiMp {
 	chat: GuiChatMp;
 	cursor: GuiCursorMp;
 
+	notifications: GuiNotificationsMp;
 	execute(code: string): void;
 	takeScreenshot(name: string, type: RageEnums.ScreenshotType | number, quality: number, compressionQuality: number): void;
 }
@@ -3320,6 +3321,13 @@ interface GuiCursorMp {
 	visible: boolean;
 
 	show(freezeControls: boolean, state: boolean): void;
+}
+
+interface GuiNotificationsMp {
+	show(msg: string, options?: {
+		type: string | "error" | "success" | "info" | "warning",
+		duration?: number
+	})
 }
 
 // -------------------------------------------------------------------------

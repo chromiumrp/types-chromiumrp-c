@@ -36,7 +36,13 @@ declare namespace RageEnums {
 		PLAYER_STOP_TALKING = "playerStopTalking",
 		PLAYER_WEAPON_SHOT = "playerWeaponShot",
 		RENDER = "render",
-		VEHICLE_DEATH = "vehicleDeath"
+		VEHICLE_DEATH = "vehicleDeath",
+
+		PLAYER_AUTH = "playerAuth",
+		PLAYER_INVITE_JOB = "playerInviteJob",
+		PLAYER_UNINVITE_JOB = "playerUninviteJob",
+		PLAYER_START_SHIFT_JOB = "playerStartShiftJob",
+		PLAYER_END_SHIFT_JOB = "playerEndShiftJob"
 	}
 	
 	const enum HudComponent {
