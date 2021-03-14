@@ -953,12 +953,18 @@ interface PlayerMp extends PedBaseMp {
 	heading: number;
 	health: number;
 	name: string;
+	firstName: string;
+	lastName: string;
 	p2pEnabled: boolean;
 	p2pConnected: boolean;
 	voiceAutoVolume: boolean;
 	voiceVolume: number;
 	voice3d: any; // TODO
 	weapon: Hash;
+
+	readonly profileId: number;
+	readonly characterId: number;
+	readonly auth: boolean;
 	readonly action: string;
 	readonly aimTarget: boolean;
 	readonly ip: string;
