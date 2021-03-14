@@ -961,10 +961,10 @@ interface PlayerMp extends PedBaseMp {
 	voiceVolume: number;
 	voice3d: any; // TODO
 	weapon: Hash;
-
-	readonly profileId: number;
-	readonly characterId: number;
-	readonly auth: boolean;
+	profileId: number;
+	characterId: number;
+	auth: boolean;
+	
 	readonly action: string;
 	readonly aimTarget: boolean;
 	readonly ip: string;
